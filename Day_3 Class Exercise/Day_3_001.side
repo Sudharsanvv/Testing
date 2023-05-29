@@ -1,0 +1,54 @@
+{
+  "id": "03ac040a-c84a-419e-bde8-5a4e95794a54",
+  "version": "2.0",
+  "name": "Day_3",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "55877b1a-3e95-4ac4-8272-7daac5922850",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "9f3c8572-9284-4116-ad93-5ba13beead17",
+    "name": "TC_001",
+    "commands": [{
+      "id": "752bbf79-b919-4201-a040-ff133bf2f675",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d324c535-bfe0-41d4-abf1-bfd1487166e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28796f2a-9671-4027-84be-c95bd4e2a233",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.nav-item:nth-child(1) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "db4f6e07-967f-4e11-a225-a589f72e0d0b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55877b1a-3e95-4ac4-8272-7daac5922850"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
